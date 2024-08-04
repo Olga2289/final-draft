@@ -1,0 +1,12 @@
+.about-us__container {
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+.about-us__title {
+    margin-bottom: 16px;
+}
+
+.about-us__descr {
+    max-width: 62%;
+}

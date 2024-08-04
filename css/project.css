@@ -1,0 +1,30 @@
+.project {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.project__title {
+    margin-bottom: 16px;
+}
+
+.project__descr {
+    margin-bottom: 30px;
+    max-width: 63%;
+} 
+    
+.project__subtitle {
+    margin-bottom: 16px;
+}
+
+.project-block__svg:not(:last-child) {
+   margin-right: 34px;
+
+}
+
+.project-block__svg {
+    border: 1px solid var(--color-light-gray);
+    padding: 27px;
+    width: 329px;
+    height: 122px;
+    background-color: var(--color-white);
+}

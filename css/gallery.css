@@ -1,0 +1,120 @@
+.gallery {
+
+    background: url(../img/IMG-Desktop/Gallery-Desktop-fon.1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gallery__container {
+    padding-top: 80px;
+    padding-bottom: 76px;
+}
+
+.gallery__title {
+    color: var(--color-white);
+}
+
+.gallery-block {
+    justify-content: space-between;
+}
+
+.gallery-block__checkbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+
+.gallery__list {
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+
+.check {
+
+    user-select: none;
+    cursor: pointer;
+
+}
+
+.check__input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.check__box {
+    position: relative;
+    padding-left: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: var(--color-white); 
+    transition: color 0.3s ease-in-out;
+}
+
+.check__box::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--color-white);
+    transform: translateY(-50%);
+    transition: border 0.3s ease-in-out;
+}
+
+.check__box::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    background-image: url(../img/Image-svg/checkbox-tochka.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3 ease-in-out;
+}
+
+.check__input:checked + .check__box::after {
+    opacity: 1;
+}
+
+.check__input:checked + .check__box::before {
+    border-color: var(--color-soft-violet);;
+}
+
+.check__input:focus + .check__box {
+    color: var(--color-soft-violet);
+}
+
+.check__input:focus + .check__box::before {
+    border-color: var(--color-soft-violet);
+}
+
+.check__input:hover + .check__box::before {
+    border-color: var(--color-soft-violet);
+}
+.check__input:hover + .check__box::after {
+    border-color: var(--color-soft-violet);
+}
+
+.check__input:active + .check__box::after {
+    opacity: 1;
+    border-color: var(--color-soft-violet);
+}
+
+.check__input:active + .check__box::before {
+    border-color: var(--color-soft-violet);
+}
+
+.check__input:active + .check__box {
+    color: var(--color-soft-violet);
+}

@@ -1,0 +1,38 @@
+.catalog__container {
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.catalog__title {
+    margin-bottom: 16px;
+}
+
+.catalog__descr {
+    margin-bottom: 40px;
+    max-width: 1080px;
+}
+
+.catalog__subtitle{
+   margin-bottom: 15px; 
+}
+
+.catalog__time {
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--color-dark-gray);
+}
+
+.catalog__content {
+    gap: var(--gap);
+}
+
+.catalog__content:not(:last-child) {
+    margin-bottom: var(--gap);
+}
+
+.catalog__block {
+    max-width: 800px;
+    flex-direction: column;
+    justify-content: center;
+}
