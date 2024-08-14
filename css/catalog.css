@@ -1,19 +1,19 @@
 .catalog__container {
     padding-top: 80px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 .catalog__title {
     margin-bottom: 16px;
 }
 
-.catalog__descr {
+.catalog-top__descr {
     margin-bottom: 40px;
     max-width: 1080px;
 }
 
 .catalog__subtitle{
-   margin-bottom: 15px; 
+   margin-bottom: 10px; 
 }
 
 .catalog__time {
@@ -32,7 +32,12 @@
 }
 
 .catalog__block {
-    max-width: 800px;
+    max-width: 50%;
     flex-direction: column;
     justify-content: center;
+}
+
+.catalog__image {
+    display: block;
+    max-width: 100%;
 }
