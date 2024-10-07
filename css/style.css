@@ -1,154 +1,146 @@
 html {
-    box-sizing: border-box;
-  }
-  
-  *,
-  ::before,
-  ::after {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+}
 
-  h1,h2,h3,h4,h5,h6 {
-    margin: 0;
-  }
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
 
-  p {
-    margin: 0;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
 
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
+p {
+  margin: 0;
+}
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-  img {
-    max-width: 100%;
-  }
+img {
+  max-width: 100%;
+}
 
-  body {
-    margin: 0;
-    font-family: "OpenSens","Muller", sans-serif;
-    
-  }
+body {
+  margin: 0 auto;
+  font-family: "--font-family", "--second-family", sans-serif;
+}
 
-  @font-face {
-    font-family: "Muller";
-    src: local("Muller-Regular"),
-     url("../fonts/muller-regular.woff2") format("woff2"),
-      url("../fonts/muller-regular.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
+@font-face {
+  font-family: "OpenSens";
+  src: local("OpenSens-Regular"),
+    url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
-  @font-face {
-    font-family: "OpenSens";
-    src: local("OpenSens-Regular"),
-      url("../fonts/OpenSans-Regular.woff2") format("woff2"),
-      url("../fonts/OpenSans-Regular.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
+@font-face {
+  font-family: "OpenSens";
+  src: local("OpenSens-SemiBold"),
+    url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/OpenSens-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
 
-  @font-face {
-    font-family: "OpenSens";
-    src: local("OpenSens-SemiBold"),
-     url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
-      url("../fonts/OpenSens-SemiBold.woff") format("woff");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-  }
+@font-face {
+  font-family: "OpenSens";
+  src: local("OpenSens-Bold"),
+    url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
-  @font-face {
-    font-family: "OpenSens";
-    src: local("OpenSens-Bold"),
-     url("../fonts/OpenSans-Bold.woff2") format("woff2"),
-      url("../fonts/OpenSans-Bold.woff") format("woff");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-  }
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Regular"),
+    url("../fonts/muller-regular.woff2") format("woff2"),
+    url("../fonts/muller-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
+:root {
+  --font-family: "OpenSans", sans-serif;
+  --second-family: "Muller", sans-serif;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-moderate-violet: #9d5cd0;
+  --color-very-dark-gray: #333333;
+  --color-dark-gray: #999999;
+  --color-dark-moderate-violet: #7943a4;
+  --color-soft-violet: #c283f3;
+  --color-very-soft-violet: #d1a9f0;
+  --color-light-gray: #cacaca;
+  --color-strong-red: #d11616;
+  --color-green-light: #30bf39;
+  --color-ececec: #ececec;
+  --gap: 50px;
+  --gap2: 40px
+  --elements: 3;
+}
 
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1630px;
+  width: 100%;
+}
 
+.section__title {
+  margin-bottom: 20px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 65px;
+  color: var(--color-very-dark-gray);
+}
 
-  
-  :root {
-    --font-family: "OpenSans", sans-serif;
-    --second-family: "Muller", sans-serif;
-    --color-black: #000000;
-    --color-white: #ffffff;
-    --color-moderate-violet: #9d5cd0;
-    --color-very-dark-gray: #333333;
-    --color-dark-gray: #999999;
-    --color-dark-moderate-violet: #7943a4;
-    --color-soft-violet: #c283f3;
-    --color-very-soft-violet: #d1a9f0;
-    --color-light-gray: #cacaca;
-    --color-strong-red: #d11616;
-    --gap: 50px;
-    --elements: 3;
+.subtitle {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  color: var(--color-very-dark-gray);
+}
 
-  }
+.section__descr {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: var(--color-very-dark-gray);
+}
 
-  .container {
-    width: 1630px;
-    max-width: 100%;
-    padding: 0 15px;
-    /* padding-right: 15px;
-    padding-left: 15px; */
-    margin: 0 auto;
-  }
+.list__reset {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
 
-  .section__title{
-    margin-bottom: 20px;
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 65px;
-    color: var(--color-very-dark-gray);
-  }
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
 
-  .subtitle{
-    font-family: var(--font-family);
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 133%;
-    color: var(--color-very-dark-gray);
-  }
+.flex {
+  display: flex;
+}
 
-  .section__descr{
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 200%;
-    color: var(--color-very-dark-gray);
-  }
-
-  .list__reset {
-    margin: 0 auto;
-    padding: 0;
-    list-style: none;
-  }
-
-  .btn-reset {
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-  }
-
-
-
-  .flex {
-    display: flex;
-  }
-
-  .btn__reset {
-    padding: 0;
-    border: none;
-    cursor: pointer;
-  }

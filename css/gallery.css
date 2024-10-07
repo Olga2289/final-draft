@@ -27,7 +27,6 @@
 
 
 .gallery__list {
-    flex-wrap: wrap;
     gap: var(--gap);
 }
 
